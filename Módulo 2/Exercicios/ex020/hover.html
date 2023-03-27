@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Exemplo de Hover e pseudo classes em CSS</title>
+    <style>
+            body { 
+                font-family: 'Courier New', Courier, monospace;
+            }
+            div:hover{
+                color: red;
+            }
+            div > p { 
+                display: none;
+            }
+            div:hover > p { 
+                display: block;
+                color: white;
+                background-color: red;
+                width: 300px;
+            }
+    </style>
+        <!--
+            o hover é uma pseudo classe do CSS.
+            
+            Aqui, utilizando a div e o hover associado ao conceito de child: 
+            
+            - Colocamos a tag de paragrafo como child da div, primeiro com display none para esconder o texto.
+            
+            - Em seguida, criamos um div:hover com paragrafo de child e configuramos para display block.
+            
+            - Isso significa que ao passar o mouse (hover) o paragrafo filho irá dar um display block, ou seja, bloquear a configuração anterior de display none, e assim fazer o texto aparecer.
+
+            Esse é um racionio básico de como construir menus que aparecem quando passamos o mouse ou clicamos neles.
+        -->
+</head>
+<body>
+    <h1>Exemplo de Hover</h1>
+    <p>
+        Passe o mouse sobre o texto abaixo.
+    </p>
+    <div>
+        Passa o mouse aqui!
+        <p>
+            TEXTO ESCONDIDO!
+        </p>
+    </div>
+    <p>
+        Fim do exemplo.
+    </p>
+</body>
+</html>

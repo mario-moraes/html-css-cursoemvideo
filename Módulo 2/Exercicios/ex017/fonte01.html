@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    
+    <style>
+        body {
+            font-family: 'Work Sans', Arial, Helvetica, sans-serif;
+            font-size: 16px;
+        }
+        /* Sobre o font size:
+
+            - Medidas absolutas: 
+            cm, mm, in, pt, pc, px (W3C recomendado). 
+                16px é o tamanho natural dos navegadores. 
+                16px = 1em, usando em você trabalha de forma relativa ao tamanho natural.
+
+            - Medidas relativas: 
+                em (relativo ao "m" maiusculo de uma fonte) é a W3C recomendado; 
+                ex (tamanho da altura x da fonte);
+                rem (relativo ao root, fonte que esta configurada no body);
+                vw (relativo percentual ao viewport);
+                vh (altura da viewport); 
+        */
+        h1{ 
+            font: italic bolder 3em 'Work Sans', sans-serif; 
+        
+            /* shorthand font é o atalho utilizado acima, o racicinio é este:
+            
+            font style ->  font-weight -> font-size -> font-family. 
+            
+            Ou seja, com as declarações:
+            
+            font-style: italic;
+            font-weight: bolder;
+            font-size: 3em;
+            font-family: 'Work Sans', sans-serif'
+        */ 
+        }
+    </style>
+    <!--
+        Para aumentar a compatibilidade de fontes, pesquise por "CSS websafe fonts combinations". 
+        Se você quer deixar a compatibilidade em 100% dos dispositivos sempre termine sua declaração com a categoria "sans-serif". 
+    -->
+</head>
+
+<body>
+    <h1>Trabalhando com fontes</h1> 
+    <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis voluptatibus obcaecati est? Nisi, quaerat unde, iusto odio commodi illum adipisci blanditiis voluptate id impedit voluptas voluptates omnis eum labore doloremque. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor, doloribus nisi, cupiditate assumenda possimus a maxime corrupti illo velit consectetur fuga reiciendis aliquam esse tempore exercitationem! Similique in harum veniam!
+    </p>
+    <h2>Subtítulo do exercício</h2>
+    <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis, accusantium! Perferendis maiores dolor officiis! Quo dolor modi officia reiciendis nihil debitis, nemo molestiae adipisci nobis, libero eius, cupiditate amet est!
+    </p>
+</body>
+</html>

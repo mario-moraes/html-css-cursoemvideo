@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: dimgray;
+            margin: 0px;
+        }
+        header {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+        nav {
+            background-color: rgb(102, 102, 102);
+            padding: 3px;
+            box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.315);
+            /* 
+                - Ordem das configurações de shorthand para o box-shadow: X offset, Y offset, blur, spread, color. 
+                    - Os tipos de sombra podem ser outset (padrão) e inset (colocar "inset" antes dos valores para gerar uma sombra tipo interna).
+                
+                    - Sobre a cor da sombra, diminua sempre a transparência da cor preta para gerar um efeito mais agradavel.
+
+                - Dica de ouro: você pode utilizar o devtools do chrome, inspecionar o nav, e então adicionar um box-shadow e testar configurações e ver o resultado visual primeiro, para só depois trazer a linha de código gerada para o CSS. 
+            */ 
+        }
+        nav > a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin-right: 30px;
+        }
+        nav > a:hover { 
+            text-decoration: underline;
+            color: blue;
+        }
+        main {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            box-shadow: 4px 4px 9px 0px rgba(0, 0, 0, 0.384);
+            border-radius: 20px;
+            /* 
+            - O border-radius neste caso está configurado para todas as bordas terem o mesmo raio. 
+            
+            - Porém, você pode utilizar tanto um shorthand quanto propriedades individuais para configurar cada borda individualmente, na seguinte ordem do exemplo:
+                    border-top-left-radius: 10px; 
+                    border-top-left-radius: 20px;
+                    border-bottom-left-radius: 30px;
+                    border-bottom-left-radius: 40px;
+            - Para o caso de um short hand de 2 valores, então as propriedades alteradas serão, por exemplo para um código "border-radius: 20px 1px" se traduzirá como:
+                Valor 1: 20px 
+                    border-top-left-radius: 20px; border-bottom-right-radius: 20px;
+                Valor 2: 10px
+                    border-top-right-radius: 10px; border-bottom-left-radius 10px;
+
+            - Dica de ouro: você pode testar tudo isso usando o devtools do chrome, ao inspecionar a tag, e depois trazendo o código pro CSS.
+            - Dica: você pode usar porcentagem também ao inves de pixel como medidad do border-radius.
+            */      
+        }
+        h1 {
+            text-align: center;
+        }
+        article {
+            background-color: lightgray;
+            padding: 5px;
+
+        }
+        article > aside { 
+            background-color: darkgrey;
+        }
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 4px;
+            margin: 0px;
+        }
+        footer > p {
+            margin: 0px;
+        }
+        div#bola {
+            background-color: white;
+            height: 100px;
+            width: 100px;
+            margin: 10px;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Site de Notícias</h1>
+        <nav>
+            <a href="#"> Inicio </a>
+            <a href="#"> Sobre </a>
+            <a href="#"> Contato </a>
+            <a href="#"> FAQ </a>
+
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+            <p>Esportes Política Tecnologia</p>
+        </section>
+
+        <section id="noticias"> 
+            <article>
+                <h2>Notícias sobre o Brasil</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus ipsam inventore numquam nostrum vitae nulla quisquam repellendus magnam mollitia, consequatur quas laudantium, dignissimos reprehenderit et, beatae earum magni sint velit.
+                </p>
+                <aside>
+                    <p>Artigo escrito por Camilla Almeida.</p>
+                </aside>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido por CursoemVideo.</p>
+    </footer>
+    <div id="bola"> </div>
+    
+</body>
+</html>

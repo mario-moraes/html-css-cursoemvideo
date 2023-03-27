@@ -1,0 +1,50 @@
+@charset "UTF-8";
+
+/*
+Em HTML é id = em CSS é "#" (somente um por html)
+Em HTML é class = em CSS é "." (pode varios elementos)
+*/
+
+/*
+De acordo com o W3C, só utilize apenas um id por documento. Na dúvida, use sempre classes.
+
+Dica: não dê nome nas suas cores de acordo com a forma mas sim a funcionalidade, pois facilita a manutenção do código. Não use acentos nem caracteres especiais no nome das classes.
+*/
+
+body {
+    background-color: #d6fde9;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+    color: #1e402f;
+}
+
+h1#principal {
+    text-align: center;
+    background-color: #3c805e;
+    color: white;
+
+}
+
+h2{
+    color: #3c805e;
+    font-weight: bold;
+}
+
+.basico{ 
+    color: #3c8074;
+}
+.intermediario{
+    color: #80793c;
+}
+
+.avancado{
+    color: #803c3c;
+}
+
+p{
+    text-align: justify;
+    text-indent: 5%
+}
+

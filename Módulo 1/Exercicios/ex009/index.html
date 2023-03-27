@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício sobre Listas</title>
+</head>
+
+<body>
+    <h1>Exercicios sobre listas HTML</h1>
+     <h2>Listas ordernadas</h2>
+    <p>
+        A tag "ol" possui parâmetro type, onde configuramos o tipo de marcador da lista atual tais como:
+        <pre>
+            1 - valor padrão. Cria lista numeradas "1,2,3..."
+            A - Cria listas alfabéticas maiusculas. "A, B, C..."
+            a - Cria listas alfabéticas minusculas. "a,b,c..."
+            I - Cria listas com algarismo romanos maiusculos. "I, II, III..."
+            i - Cria listas com algarismos romanos minusculos. "i, ii, iii..."
+        </pre>
+        Pode ainda indicar o inicio da contagem a partir de um numero especifico usando o parâmetro "start", exemplo de linha de código:
+        <code>type="I" start="5"></code>
+    </p>
+        <ol type="1">
+         <li>Acordar</li>
+         <li>Escovar os dentes</li>
+         <li>Estudar</li>
+         <li>Almoçar</li>
+         <li>Jogar</li>
+         <li>Estudar mais</li>
+         <li>Dormir</li>   
+        </ol>
+        <ol type="A">
+            <li>Acordar</li>
+            <li>Escovar os dentes</li>
+            <li>Estudar</li>
+            <li>Almoçar</li>
+            <li>Jogar</li>
+            <li>Estudar mais</li>
+            <li>Dormir</li>   
+           </ol>
+           <ol type="I">
+         <li>Acordar</li>
+         <li>Escovar os dentes</li>
+         <li>Estudar</li>
+         <li>Almoçar</li>
+         <li>Jogar</li>
+         <li>Estudar mais</li>
+         <li>Dormir</li>   
+        </ol>
+    <h2>Listas não ordernadas</h2>
+    <p>Usand a tag "ul" de unordered list é possivel criar listas onde a ordem não é importante. Para modificar o marcador use o parâmetro <code>type=""</code> associado com os comandos "disc", "circle" e "square" </p>
+    <ul type="disc">
+        <li>Fazer aulas de carro</li>
+        <li>Fazer aulas de moto</li>
+        <li>Tirar carteira</li>
+        <ul type="circle">
+            <li>Fazer aulas de carro</li>
+            <li>Fazer aulas de moto</li>
+            <li>Tirar carteira</li>
+            <ul type="square">
+                <li>Fazer aulas de carro</li>
+                <li>Fazer aulas de moto</li>
+                <li>Tirar carteira</li>
+            </ul>
+        </ul>
+    </ul>
+    <h2>Listas mistas (ordernadas e não ordenadas)</h2>
+        <p>Lista dos meus Jogos Favoritos: este desafio do Curso em Video, estou listando os <strong>melhores jogos</strong> por consoles de gerações antigas!!</p>
+    <ul>
+        <li>Nintendinho</li>
+            <ol> 
+                <li>Mario Bros</li>
+                    <ul> 
+                    <li>Super Mario Bros 3</li>
+                    <li>Mario: Lost Levels</li>
+                    </ul>
+                <li>Ninja Gaiden</li>
+                    <ul>
+                    <li>Ninja Gaiden III</li> 
+                    </ul>
+            </ol>
+        <li>Super Nintendo</li>
+            <ol> 
+                <li>Super Mario World</li>
+                <li>Donkey Kong</li>
+                    <ul>
+                    <li>Donkey Kong Country III</li>
+                    <li>Diddy's Kong Quest</li>
+                    </ul>
+            </ol>
+        <li>Playstation 1</li>
+            <ol>
+                <li>Final Fantasy</li>
+                    <ul>
+                    <li>Final Fantasy VII</li>
+                    <li>Final Fantasy IX</li>
+                    </ul>
+                <li>Castlevania</li>
+                    <ul>
+                    <li>Symphony of the Night</li>
+                    </ul>
+            </ol>
+    </ul>    
+        <h2>Lista de Definições</h2>
+        <p>São como se fossem "dicionarios", é uma lista sem demarcadores mas bem útil em alguns casos. Estão dentro de tags "dl" definition list, "dt" definition term, "dd" definition description. </p>
+    <dl>
+        <dt>HTML</dt>
+        <dd>Linguagem de marcação utilizada para criar conteúdo em sites.</dd>
+        <dt>CSS</dt>
+        <dd>Linguagem de marcação utilizada para especificação de estilos.</dd>
+        <dt>Javascript</dt>
+        <dd>Linguagem de programação para criar interatividade. </dd>
+    </dl>
+    <!--A relação entre o termo e definição pode ajudar muito em mecanismos de busca.-->
+
+</body>
+</html>

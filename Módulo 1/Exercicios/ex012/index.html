@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio de Videos</title>
+</head>
+<body>
+    <h1>Aprendendo a inserir videos com HTML5 localmente</h1>
+    <!--
+        Dica de software open source para conversão de videos: handbrake.fr 
+        Dica de site para conteúdo de video e imagem sem copyright: pexels.com
+    -->
+    <p>Essa dica é para clientes que precisam muito hospedar videos no próprio sistema, que sejam mais curtos. A ideia é sempre facilitar a navegação da página aumentando a compatibilidade e diminuindo o tamanho do arquivo. 
+    </p>
+
+    <h2>Exemplo inserção simples</h2>
+
+    <video controls autoplay loop src="midia/pexels-video-encoded.mp4" width="500"> 
+    </video>
+    <!--
+        Para aumentar a compatibilidade nos navegadores, usamos o raciocinio de hierarquia de formatos dentro da tag video. A ordem aqui pode ser por exemplo pelo arquivo mais comum (mp4) ou pelo menor tamanho de arquivo para otimizar o carregamento da pagina.
+    -->
+    <h2>Exemplo de inserção com varios formatos e poster</h2>
+    <video controls width="500" poster="midia/pexels-video-poster-compressed.png">
+        <source src="midia/pexels-video-encoded.mp4" type="video/mp4">
+        <source src="midia/pexels-video-encoded.mp4" type="video/m4v">
+        <source src="midia/pexels-video-encoded.webm" type="video/webm">
+        <source src="midia/pexels-video-encoded.ogv" type="video/ogg">
+        <p>Desculpe, seu navegador não possui compatibilidade com reprodução de videos.</p>
+    </video>
+    <!--
+        Deixar claro ao cliente: videos hospedados no próprio sistema pela tag video irão gerar um grande tráfego de dados, por mais que os arquivos sejam pequenos, e isso pode gerar altos custos ao cliente. 
+    -->
+    <h2>Aprendendo a usar o embed (incorporação)</h2>
+    <p>O jeito mais prático para economizar banda para o cliente, é utilizar outros hospedadores de video, como o próprio youtube. Tal prática inclusive auxilia na visibilidade do site através do algoritmo de busca do Google.</p>
+    <p>Vale ressaltar que essa prática é para videos públicos. Para serviço de assinantes utilizar um servidor que ofereça opção privada de embed do video, como o Vimeo, para cursos por exemplo.
+    </p>
+    <h3>A tag utilizada no embed é "iframe" gerada pelo próprio Youtube na opção de compartilhar:</h3>
+    
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/3hng-hmSv2Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+
+</body>
+</html>

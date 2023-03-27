@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Mídias em HTML5 </title>
+</head>
+<body>
+     <h1>Imagem  de tamanho dinâmico</h1>
+    <p>Tente abrir esse site em vário dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+
+    <picture>
+        <source media="(max-width: 780px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1080px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="imagem grande flexivel">
+    </picture>
+    <!--
+    Explicação:
+        - Primeiro passo, crie uma tag picture para indicar que sua imagem terá vários sources.
+        
+        - É importante que exista uma ordem entre as tags source, onde os itens mais acima sejam os menores tamanhos para max-width e que os seguintes sejam maiores de forma crescente. O ultimo item dentro da tag picture deve ser a imagem padrão, neste caso a imagem grande para a maior tela.  
+        
+        - Coloque o tamanho máximo de 1050px ou 1080px, essa margem de 80px é para cobrir a distância e evitar o aparecimento da barra de rolagem durante a transição dos tamanhos das imagens.
+
+        - Em srcst= coloque o diretório da imagem e type coloque o formato (png por ex.)
+        
+        -No código acima iniciou-se de baixo para cima começando com a tag img da imagem g e depois as tags source para m e source para p.
+
+        - Os tamanhos escolhidos de imagens no gimp foram: 300x300px (pequena), 700x700px (média) e 1000x1000px (grande) todas com 80x80 de resolution.
+     -->
+     <h1>Reproduzindo Audio</h1>
+
+     <p>Vamos aprender a reproduzir audios em HTML5 de um maneira simples:</p>
+
+     <audio 
+         src="midia/happy-mistake.mp3" controls autoplay loop> 
+    </audio>
+    
+    <!--segunda maneira, mais recomendavel:-->
+    <p>Agora, de uma maneira que eleve a compatibilidade de arquivos nos navegadores:
+    </p>
+    <audio preload="metadata" controls>
+        <source src="midia/guanacast-33.mp3" type="audio/mpeg">
+        <source src="midia/guanacast-33.ogg" type="audio/ogg">
+            <p>
+            Infelizmente seu navegador não consegue reproduzir o audio. 
+            <a href="midia/guanacast-33.mp3" type= "audio/mpeg"> Clique para fazer o download do arquivo MP3.</a>
+            </p>
+    </audio>
+<!--
+    - Nesta segunda maneira, as tags source irão agir em sequencia e, caso o arquivo MP3 nem OGG consiga ser reproduzido, será oferecido um link de download para o usuario.
+    
+    - Importante: o atributo preload="metadata" é crucial para que o navegador carregue a página completa apenas com os metadados do audio, sem precisar que o arquivo de midia seja carregado por completo. Assim, a navegação fica mais leve e o usuario reproduz/baixa o audio apenas quando clica-lo. 
+-->
+
+     
+</body>  
+</html>

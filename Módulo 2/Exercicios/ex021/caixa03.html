@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Borda personalizada</title>
+    <style>
+        h1{
+            border: 12px solid transparent;
+            padding: 10px;
+            border-image: url("ballsborder.jpeg") 80 repeat;
+        
+            /* 
+            Foi utilizado o shorthand para essa configuração, individualmente seria:
+                border-image-source: url("ballsborder.jpeg");
+                border-image-slice: 80;
+                border-image-repeat: repeat;
+            
+            - Usando o devtools do chrome e inspecionando a tag h1, efetuamos os testes visuais de borda, slice e repeat até achar um resultado interessante. Depois é só trazer o código para o CSS.
+            - Nem todos navegadores são compatíveis com essa borda de imagem. 
+            - Esta técnica de image source pra borda não é muito utilizada e o guanabara não gosta... mas vai que um dia precisa. 
+            */
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Teste de borda personalizada!</h1>
+</body>
+</html>

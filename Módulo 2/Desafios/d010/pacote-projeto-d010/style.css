@@ -1,0 +1,138 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: idroid;
+    src: url(./fontes/idroid.otf)
+}
+
+h1#titulosite {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.346);
+    padding-top: 20px;
+}
+
+p#descricao{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: white;
+    text-shadow: 1.5px 1.5px 1.5px rgba(0, 0, 0, 0.246);
+}
+
+header{
+    background-image: linear-gradient(180deg, #3CC074, #1a5533);
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.134);
+}
+
+nav > a {
+    text-decoration: none;
+    padding: 5px;
+    color: white;
+}
+    nav > a:hover {
+        color: aquamarine;
+    }
+
+body{
+    background-color: #84E1AD ;
+}
+
+main {
+    margin-top: 0px;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding: 10px;
+    background-color: white;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.169);
+}
+
+p {
+    text-align: justify;
+    text-indent: 5%;
+    text-shadow: 0.1px 0.1px 0.1px 0.1px rgba(0, 0, 0, 0.241);
+}
+
+h1, h2 { 
+    font-family: "idroid"; 
+    color: #29503aeb;  
+}
+
+h2{
+    background-image: linear-gradient(to left, white, #87edb3a1  ) ;
+}
+
+ol{
+    list-style-type: "✓";
+    columns: 2; 
+    text-decoration: underline;
+}
+
+.video-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 56.25%; 
+    background-color: #1a5533;
+}
+
+    .responsive-iframe{
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom:0;
+        left:0;
+        width: 100%;
+        height: 100%;
+        scale: 90%;
+    }
+
+h3{
+    background-color: #45a675;
+    color: white;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    padding: 5px;
+    margin-bottom: 0;
+}
+
+.maislinks {
+    background-color: #b7f2d0;
+    padding: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.242);
+}
+
+    .maislinks > p > a {
+    color: #1a5533;
+    text-decoration: none;
+    font-weight: bold; 
+    }
+        .maislinks > p > a:hover {
+        color: #84E1AD;
+        text-decoration: underline;
+        }
+
+section > p > a {
+    color: #1a5533;
+    text-decoration: none;
+    font-weight: bold;
+}
+    section > p > a:hover { 
+    text-decoration: underline;
+    color: #84E1AD;
+    }
+
+#link-icon:hover {
+    text-decoration: none;
+}
+
+footer{
+    background-color: #1a5533;
+}
+    footer > p {
+        color: white;
+        text-align: center;
+    }
