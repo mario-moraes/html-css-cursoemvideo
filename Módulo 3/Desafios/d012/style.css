@@ -61,21 +61,41 @@ section {
     De forma semelhante ao h1, usou-se view width (vw) para forçar responsividade no tamanho do texto ao redimensionar a janela, porém a solução mais adequada também seria através de media querie.
     */
 }
+section > p {
+    padding-bottom: 1em;
+}
 
 section.padrao {
     background-color: white;
     color: black;
 }
+
 section.imagem {
     background-color: rgb(52, 52, 52);
     color: white;
+    box-shadow: inset 6px 6px 13 px 0 px rgba(0, 0, 0, 0.736);
 }
+
 section.imagem > p {
-    background-color: rgba(0, 0, 0, 0.146);
+    background-color: rgba(0, 0, 0, 0.341);
     display: inline-block;
-    padding: 5px ;
+    padding: 5px;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.198);
     /*o display inline-block transformou a caixa para se adaptar ao conteúdo*/
 }
+
+section#img01{
+    background-image: url(imagens/background001.jpg);
+    background-position: right center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+section#img02{
+    background-image: url(imagens/background002.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
 footer {
     background-color: black;
     color: white;
