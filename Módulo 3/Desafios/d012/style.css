@@ -1,0 +1,86 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&family=Sriracha&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&family=Sriracha&display=swap');
+
+:root {
+    --fontepadrao: Verdana, Geneva, Tahoma, sans-serif;
+    --fontetitulo: "Passion One", cursive;  
+    --fontecordel: "Sriracha"; 
+}
+
+* {
+ margin: 0px;
+ padding: 0px;
+ font-size: 1em;
+}
+
+html, body {
+    background-color: darkgray;
+    font-family: var(--fontepadrao);
+    min-height: 100vh;
+}
+header{
+    background-color: black;
+    color: white;
+    font-family: var(--fontetitulo);
+    text-align: center;
+    padding: 10px;
+}
+header h1 {
+    font-size: 10vw;
+    font-variant: small-caps;
+    padding-top: 50px;
+}
+/*
+Utilizou-se view height (vh) em font-size como recurso para forçar com que o h1 se reajuste no redimensionamento da janela, entretanto, a melhor solução para gerar esse tipo de responsividade seria utilizar media queries. 
+*/
+header p {
+    padding-bottom: 50px;
+}
+
+header a, footer a {
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+} 
+header a:hover, footer a:hover {
+    text-decoration: underline;
+    color: yellow;
+}
+
+section {
+    font-family: var(--fontecordel);
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    padding-left: 30px;
+    line-height: 2em;
+    font-size: 3.5vw;
+    /*
+    De forma semelhante ao h1, usou-se view width (vw) para forçar responsividade no tamanho do texto ao redimensionar a janela, porém a solução mais adequada também seria através de media querie.
+    */
+}
+
+section.padrao {
+    background-color: white;
+    color: black;
+}
+section.imagem {
+    background-color: rgb(52, 52, 52);
+    color: white;
+}
+section.imagem > p {
+    background-color: rgba(0, 0, 0, 0.146);
+    display: inline-block;
+    padding: 5px ;
+    /*o display inline-block transformou a caixa para se adaptar ao conteúdo*/
+}
+footer {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+
