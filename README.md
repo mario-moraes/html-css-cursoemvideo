@@ -1,3 +1,3 @@
 # html-css
 
-aprendendo a utilizar git e github e gerenciar os repositórios. 
+ Repositório de estudos com exercicios, desafios e projetos referente ao curso de HTML5-CSS3 do CursoemVideo. 
